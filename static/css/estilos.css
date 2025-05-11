@@ -1,0 +1,142 @@
+body {
+  font-family: "Roboto", sans-serif; /* Fuente global */
+  background-color: #ffffff; /* Fondo claro */
+  color: #333; /* Texto oscuro */
+}
+.container {
+  display: flex; /* Activa Flexbox */
+  height: 98vh; /* Altura de toda la ventana */
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambia la disposición a vertical en pantallas pequeñas */
+  }
+
+  .content_r {
+    order: -1; /* Mueve este div (imagen) al inicio en pantallas pequeñas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    width: 98%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-height: 150px; /* Define la altura máxima del contenedor */
+    background-color: #ffffff; 
+  }
+  .content_r img {
+    display: block;
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* La imagen se ajusta a la altura del contenedor */
+    object-fit: cover; /* Recorta la imagen para ajustarse al contenedor */
+  }
+  .content_i {
+    order: 1; /* Asegura que el formulario quede después de la imagen */
+    display: flex;
+    justify-content: center; /* Centra el contenido internamente */
+    align-items: center;
+  }
+}
+.content_i {
+  flex: 1; /* Ambos toman 50% del ancho */
+  /*text-align: center; /* Centra horizontalmente el contenido */
+  display: flex;
+  justify-content: center; /* Centra el contenido internamente */
+  align-items: center; 
+}
+
+.content_r {
+  display: flex; /* Flexbox para que la imagen se ajuste dentro */
+  align-items: center; /* Centrar verticalmente si es necesario */
+  justify-content: center; /* Centrar horizontalmente si es necesario */
+}
+
+.content_r img {
+  display: block; /* Evita que la imagen tenga espacios blancos alrededor */
+  max-height: 100%; /* Ajusta la imagen para no exceder la altura del contenedor */
+  max-width: 100%; /* Ajusta la imagen para no exceder el ancho del contenedor */
+}
+.content_l #login_form, #register-form  {
+  /*display: block; /* Evita que la imagen tenga espacios blancos alrededor */
+  /*margin: 10%;*/
+  max-height: 100%; /* Ajusta la imagen para no exceder la altura del contenedor */
+  max-width: 100%; /* Ajusta la imagen para no exceder el ancho del contenedor */
+}
+h1 {
+  text-align: center;
+  font-family: "Varela Round", serif;
+}
+h3 {
+  font-family: "Varela Round", serif;
+  word-wrap: break-word; /* Permite cortar palabras largas si es necesario */
+  overflow-wrap: break-word; /* Compatibilidad adicional */
+  line-height: 1.4; /* Espaciado entre líneas */
+  max-width: 70%; /* Opcional: ajusta el ancho máximo del texto */
+  margin: 0 auto; /* Centra el texto dentro del contenedor */
+}
+label {
+  font-family: "Roboto", serif;
+}
+
+.form {
+  /*display: block; */
+  margin: 5%;
+  margin-left: 15%;
+}
+
+input{
+  width: 85%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  display: grid;
+}
+
+
+input[type="button"] {
+  background-color: #007BFF;  /* Color de fondo (puedes cambiarlo) */
+  color: white;  /* Color del texto */
+  border: 1px solid #007BFF;  /* Bordes del botón */
+  cursor: pointer;  /* Cambia el cursor a mano al pasar por encima */
+  padding: 1rem;
+}
+
+input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+input::placeholder {
+  color: #888;  /* Color del texto del placeholder */
+  font-style: italic;  /* Estilo de fuente (opcional) */
+  font-size: 16px;  /* Tamaño de la fuente (opcional) */
+}
+
+button{
+  width: 85%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  background-color: #007BFF;
+  color: white;  /* Color del texto */
+  border: 1px solid #007BFF;  /* Bordes del botón */
+  cursor: pointer;  /* Cambia el cursor a mano al pasar por encima */
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer; 
+}
+hr {
+  border: none;
+  width: 90%;
+  border-top: 2px solid rgb(238, 238, 238); /* Línea de separación */
+  margin: 10px 0; /* Espacio entre los divs */
+}
