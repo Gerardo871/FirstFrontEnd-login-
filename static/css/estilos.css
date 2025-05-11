@@ -23,6 +23,17 @@ body {
     max-height: 150px; /* Define la altura máxima del contenedor */
     background-color: #ffffff; 
   }
+  .inputt[type="button"]{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .form {
+    /*display: block; */
+    margin: 20%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
   .content_r img {
     display: block;
     width: 100%; /* La imagen ocupa todo el ancho del contenedor */
@@ -70,7 +81,7 @@ h3 {
   word-wrap: break-word; /* Permite cortar palabras largas si es necesario */
   overflow-wrap: break-word; /* Compatibilidad adicional */
   line-height: 1.4; /* Espaciado entre líneas */
-  max-width: 70%; /* Opcional: ajusta el ancho máximo del texto */
+  max-width: 60%; /* Opcional: ajusta el ancho máximo del texto */
   margin: 0 auto; /* Centra el texto dentro del contenedor */
 }
 label {
@@ -79,8 +90,16 @@ label {
 
 .form {
   /*display: block; */
-  margin: 5%;
-  margin-left: 15%;
+  margin: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.inputt-b {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente si hay altura */
+  width: 100%;
 }
 
 input{
@@ -89,11 +108,12 @@ input{
   margin-bottom: 1rem;
   border: 1px solid #ced4da;
   border-radius: 20px;
-  display: grid;
+  display: flex;
 }
 
 
 input[type="button"] {
+  width: 80%;
   background-color: #007BFF;  /* Color de fondo (puedes cambiarlo) */
   color: white;  /* Color del texto */
   border: 1px solid #007BFF;  /* Bordes del botón */
@@ -102,6 +122,9 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
+  align-items: center;
+  justify-content: center;
+  display: flex;
   background-color: #0056b3;
 }
 
@@ -109,21 +132,6 @@ input::placeholder {
   color: #888;  /* Color del texto del placeholder */
   font-style: italic;  /* Estilo de fuente (opcional) */
   font-size: 16px;  /* Tamaño de la fuente (opcional) */
-}
-
-button{
-  width: 85%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ced4da;
-  border-radius: 20px;
-  background-color: #007BFF;
-  color: white;  /* Color del texto */
-  border: 1px solid #007BFF;  /* Bordes del botón */
-  cursor: pointer;  /* Cambia el cursor a mano al pasar por encima */
-}
-button:hover {
-  background-color: #0056b3;
 }
 
 a {
